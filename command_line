@@ -1,0 +1,16 @@
+./svm_hmm_learn -c 5 -e 0.5 -l 2 train3.shin train4_01.model > svmhmm_training_output_01.txt
+
+./svm_hmm_classify test3.shin train4_01.model test4_01.outtags > svmhmm_testing_output_01.txt
+
+
+./svm_hmm_learn -c 5 -e 0.5 -l 3 train3.shin train4_02.model > svmhmm_training_output_02.txt
+
+./svm_hmm_classify test3.shin train4_02.model test4_02.outtags > svmhmm_testing_output_02.txt
+
+
+./svm_hmm_learn -c 5 -e 0.5 -l 4 train3.shin train4_03.model > svmhmm_training_output_03.txt
+
+./svm_hmm_classify test3.shin train4_03.model test4_03.outtags > svmhmm_testing_output_03.txt
+
+
+

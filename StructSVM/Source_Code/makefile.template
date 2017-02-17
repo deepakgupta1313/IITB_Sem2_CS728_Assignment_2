@@ -1,0 +1,20 @@
+#info used by multiple pos-tagging svmstruct makefiles
+
+#SYSTEM_CFLAGS = -I/home/tj/exp/svm_hmm/boost_1_33_1
+SYSTEM_CFLAGS = -I/home/deepakgupta1313/Desktop/Deepak/Programs/Github/IITB_Sem2_CS728_Assignment_2/Boost/boost_1_63_0
+SYSTEM_LDFLAGS =
+
+#Call 'make' using the following line to make CYGWIN produce stand-alone Windows executables
+#		make 'SFLAGS=-mno-cygwin'
+
+
+#set to 0 if you want to use gdb; otherwise there's a pthread-related seg fault in cygwin1.dll as soon as you run anything in gdb
+
+CXX = g++
+CC = gcc
+LD = $(CXX)
+CXXFLAGS = -O3 $(SFLAGS) $(SYSTEM_CFLAGS) -Wall
+LDFLAGS = -O3 $(SFLAGS) $(SYSTEM_LDFLAGS) -Wall
+%CXXFLAGS = -g $(SFLAGS) $(SYSTEM_CFLAGS) -Wall 
+%LDFLAGS = -g $(SFLAGS) $(SYSTEM_LDFLAGS) -Wall
+LIBS += -lm
