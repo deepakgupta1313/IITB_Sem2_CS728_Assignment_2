@@ -1,0 +1,6 @@
+feature space size: 1
+labels: 0=DD
+weight vector size: 2
+weight vector:
+loss type (1 = slack rescaling, 2 = margin rescaling): 2
+loss function (should be 1 for svm-hmm): 1
